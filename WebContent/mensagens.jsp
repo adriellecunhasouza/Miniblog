@@ -15,26 +15,22 @@
 </style>
 <link rel="stylesheet" href="css/print.css" type="text/css"
 	media="print" />
-<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />	
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
 </head>
 <body>
 
-<div class="container" style="width: 70%">
-		<h3>Mensagens postadas</h3>
-		
-<display:table name="${BEAN_LISTA}" uid="objmsg" defaultsort="2" defaultorder="descending">
-<display:column property="id" title="id" />
- <display:column property="mensagem" style="width: 70%;" />
- <display:column property="nome" title="Usuário" />
- <display:column property="dataMensagem" title="Data" format="{0,date,dd/MM/yyyy}" style="width: 10%;" />
- <display:column property="horaMensagem" title="Hora" format="{0,date,HH:mm}" />
- <display:column href="ControleExcluiMensagem" paramId="id" paramProperty="id" title="Excluir">
- <img alt="Excluir" src="img/close.gif">
- </display:column>
-</display:table>     
+	<h3>Mensagens postadas:</h3>
 
+	<display:table name="${BEAN_LISTA}" uid="objmsg" defaultsort="2"
+		defaultorder="descending">
+		<display:column property="mensagem" style="width: 70%;" />
+		<display:column property="nome" title="Usuário" />
+		<display:column property="dataMensagem" title="Data" format="{0,date,dd/MM/yyyy}" style="width: 10%;" />
+		<display:column property="horaMensagem" title="Hora" format="{0,date,HH:mm}" />
+		<display:column href="ControleExcluiMensagem" paramId="id" paramProperty="id" title="Excluir">
+			<img alt="Excluir" src="img/close.gif">
+		</display:column>
+	</display:table>
 
-</div>
- 
 </body>
 </html>
