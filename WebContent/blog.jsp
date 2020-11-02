@@ -1,36 +1,29 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-	<%@taglib uri="http://displaytag.sf.net" prefix="display"%>
-
-	
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Mensagens</title>
-<style type="text/css" media="all">
-@import url("css/maven-base.css");
-@import url("css/maven-theme.css");
-@import url("css/site.css");
-@import url("css/screen.css");
-</style>
-<link rel="stylesheet" href="css/print.css" type="text/css"
-	media="print" />
-<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />	
+<title>MiniBlog</title>
+<link rel="stylesheet" type="text/css" href="css/style2.css" />
 </head>
 <body>
-<div class="container" style="margin: auto; width: 100%">
-  
-	<h2>Mensagem:</h2>
-	<form action="Blog" style="margin=auto; ">
-		<textarea rows="2" cols="40" value="" name="mensagem"></textarea>
-		<br> <input type="submit" value="ENVIAR" />
-	</form>
+
+<h4 style="float: right!important; width: 14%!important; top: 70px!important; padding-top: 7px!important;"><a href="deslogar.jsp">Deslogar</a></h4>
+<div class="container" style="margin: auto!important; width: 80%">
+
+		<h2>Mensagem:</h2>
+	
+		<form action="Blog" style="">
+			<textarea rows="2" cols="40" value="" name="mensagem"></textarea>
+			<br> <br><input type="submit" value="ENVIAR" />
+		</form><br>
+
+
+	<%=request.getParameter("erro")%>
+
+
+	<jsp:include page="mensagens.jsp" />
 	</div>
-
-    <%= request.getParameter("erro") %>
-
-  
-   <jsp:include page="mensagens.jsp" />
-   </body>
+</body>
 </html>
