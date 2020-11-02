@@ -1,5 +1,5 @@
 body {
-  padding: 0px 0px 10px 0px;
+  padding: 0px 0px 0px 0px;
 }
 body, td, select, input, li{
   font-family: Verdana, Helvetica, Arial, sans-serif;
@@ -9,6 +9,14 @@ code{
   font-family: Courier, monospace;
   font-size: 13px;
 }
+
+textarea{
+	width: 50%!important;
+	height: 80px!important;
+	margin: auto!important;
+}
+
+
 a {
   text-decoration: none;
 }
@@ -38,24 +46,24 @@ a.newWindow, a.newWindow:link, a.newWindow:visited, a.newWindow:active, a.newWin
   padding-right: 18px;
 }
 h2 {
-  padding: 4px 4px 4px 6px;
-  border: 1px solid #999;
+  padding: 0;
+  border: 1px solid #fff;
   color: #900;
-  background-color: #ddd;
-  font-weight:900;
+  background-color: #fff;
+  font-weight:100;
   font-size: x-large;
 }
 h3 {
   padding: 4px 4px 4px 6px;
-  border: 1px solid #aaa;
+  border: 1px solid #fff;
   color: #900;
-  background-color: #eee;
+  background-color: #fff;
   font-weight: normal;
   font-size: large;
 }
 h4 {
   padding: 4px 4px 4px 6px;
-  border: 1px solid #bbb;
+  border: 1px solid #fff;
   color: #900;
   background-color: #fff;
   font-weight: normal;
@@ -67,6 +75,7 @@ h5 {
   font-size: normal;
 }
 p {
+	color: #900;
   line-height: 1.3em;
   font-size: small;
 }
@@ -90,7 +99,7 @@ p {
 table.bodyTable th {
   color: white;
   background-color: #bbb;
-  text-align: left;
+  text-align: center;
   font-weight: bold;
 }
 

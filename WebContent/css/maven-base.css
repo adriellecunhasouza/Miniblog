@@ -7,9 +7,8 @@ img {
 }
 table {
   padding:0px;
-  width: 100%;
-  margin-left: -2px;
-  margin-right: -2px;
+  width: 100%!important;
+  
 }
 acronym {
   cursor: help;
